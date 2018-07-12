@@ -16,12 +16,6 @@ for i in range(1,iterations):
 
 
 
-
-
-
-
-
-
 # Below are some functions to make the code run cleaner
 
 
