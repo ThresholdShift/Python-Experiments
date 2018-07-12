@@ -1,5 +1,30 @@
 import math
 
+#Change these two numbers to run different sequences
+num = 61  # this is the starting number
+iterations = 20  # This is the number of iterations
+
+for i in range(1,iterations):
+    palin = flip(num)
+    nextNum = num + palin
+    print(i,' ~~~ ', num, ' + ', palin, ' = ', nextNum)
+    num = nextNum
+    if(isPalindrome(str(num))):
+        print('palindrome')
+
+
+
+
+
+
+
+
+
+
+
+# Below are some functions to make the code run cleaner
+
+
 #a function to take a string and determine if it's a palindrome
 def isPalindrome(NumString):
     if NumString[1] == 'b':
@@ -25,13 +50,4 @@ def flip(num):
 
 
 
-num = 61
-
-for i in range(1,20):
-    palin = flip(num)
-    nextNum = num + palin
-    print(i,' ~~~ ', num, ' + ', palin, ' = ', nextNum)
-    num = nextNum
-    if(isPalindrome(str(num))):
-        print('palindrome')
 
